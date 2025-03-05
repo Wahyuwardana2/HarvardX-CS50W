@@ -5,3 +5,10 @@
     justify-content: center;
     align-items: center;
 }
+
+@mixin button-style{
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s box-shadow 0.2s;
+}
