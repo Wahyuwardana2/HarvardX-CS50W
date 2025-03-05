@@ -1,13 +1,50 @@
 @use "variables";
+@use "mixins";
+
 
 header {
-
+    width: 100%;
+    padding: 20px 20px;
+    display: flex;
+    justify-content: flex-end;
+    flex-shrink: 0;
+    font-size: 14px;
+    nav a{
+        margin-left: 15px;
+        text-decoration: none;
+        color: variables.$text-color;
+        &:hover{
+            text-decoration: underline;
+        }
+    }
 }
 
 main {
-
+    @include mixins.flex-center;
+    flex-direction: column;
+    background-color: white;
+    flex: 1;
 }
 
 footer {
-    
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 14px;
+    justify-content: space-evenly; 
+    background-color: #f2f2f2;
+    padding:0 20px 0 20px;
+    div{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        a{
+            display: block;
+            padding: 15px;
+            text-decoration: none;
+            color: variables.$text-color;
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+    }
 }
