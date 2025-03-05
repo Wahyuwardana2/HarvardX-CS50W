@@ -1,3 +1,19 @@
 @use "mixins";
 @use "variables";
 
+
+.search-input{
+    min-width: min(90vw, 584px);
+    padding: 12px 20px;
+    font-size: 16px;
+    border: 1px solid variables.$border-color;
+    border-radius: variables.$border-radius;
+    outline: none;
+    transition: all ease-in-out;
+    box-shadow: variables.$box-shadow;
+    
+    &:hover, &:focus {
+        border-color: white;
+        box-shadow: 0 1px 6px rgba(95, 90, 152, 0.5);
+    }
+}
