@@ -2,6 +2,26 @@
 @use "variables";
 
 
+.img-container{
+    position: relative;
+    display: inline-block;
+       
+    .logo{
+        display: block;
+        width: auto;
+        height: 92px;
+    }
+    .images-text{
+        position: absolute;
+        bottom: 0px;
+        right: 0;
+        margin-right: 5px;
+        font-size: 16px;
+        color: #4285f4;
+        }
+}
+
+
 .search-input{
     min-width: min(90vw, 584px);
     padding: 12px 20px;
@@ -18,7 +38,7 @@
     }
 }
 
-.search-button{
+.search-button {
     @include mixins.flex-center;
 
     input {
@@ -30,6 +50,124 @@
         &:hover {
             background-color: variables.$secondary-color;
             box-shadow: 0px 0.5px 0px 1px rgba($color: #46465c, $alpha: 0.2);
+        }
+    }
+}
+
+.g-offer{
+    font-size: 12px;
+    
+    a{
+        color: #2f5bb7;
+        margin: 5px;
+        text-decoration: none;
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+}
+
+.search-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.adv-container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 40px 20px 20px ;
+    
+    
+    h2 {
+        font-size: 20px;
+        color: #d93025;
+        margin-bottom: 25px;
+        font-weight: normal;
+        padding-bottom: 10px;
+        border-bottom: 1px solid variables.$border-color;
+    }
+}
+
+.adv-search-form {
+ 
+    form {
+        display: grid;
+        grid-template-columns: 170px minmax(200px, 600px) minmax(200px, 360px);
+        row-gap: 10px;
+        align-items: center;
+    }
+}
+
+.form-group {
+    display: contents;
+    
+    label {
+        font-size: 13px;
+        color: #222;
+        padding-right: 10px;
+    }
+    
+    input {
+        height: 30px;
+        padding: 1px 8px;
+        border: 1px solid variables.$border-color;
+        border-radius: 1px;
+        font-size: 13px;
+        
+        &:focus {
+            border-color: #4d90fe;
+            outline: none;
+            box-shadow: inset 0 2px 2px rgba(0,0,0,0.1);
+        }
+    }
+
+    h3 {
+        grid-column: 1;
+        font-size: 16px;
+        font-weight: normal;
+        color: #222;
+    } 
+
+    h4 {
+        grid-column: 3;
+        color: #666;
+    } 
+    
+    .instruction-item {
+        font-size: 11px;
+        color: #666;
+        padding-left: 20px;   
+        
+        strong {
+            color: #333;
+            font-family: monospace;
+            font-weight: normal;
+        }
+        
+    }
+
+}
+
+.adv-search-button {
+    display: flex;
+    justify-content: right;
+    margin-top: 30px;
+    grid-column: 2;
+    
+    input {
+        background-color: #4d90fe;
+        color: white;
+        font-size: 11px;
+        font-weight: bold;
+        padding: 10px 16px;
+        border: 1px solid #3079ed;
+        border-radius: 2px;
+        cursor: pointer;
+        
+        &:hover {
+            background-color: #357ae8;
+            border-color: #2f5bb7;
         }
     }
 }

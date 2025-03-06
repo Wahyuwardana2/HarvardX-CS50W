@@ -16,28 +16,39 @@
       </nav>
     </header>
 
-    <main>
-      <img src="assets/google.png" alt="Google Logo" height="92" />
-      <form action="https://www.google.com/search">
-        <input class="search-input" type="text" name="q" />
-        <div class="search-button">
-          <input type="submit" value="Google Search" />
-          <input type="submit" name="btnI" value="I'm Feeling Lucky" />
+    <main class="search-container">
+        <div class="img-container">
+          <img class="logo" src="assets/google.png" alt="Google Logo" />
         </div>
-      </form>
+        <form action="https://google.com/search">
+          <input class="search-input" type="text" name="q" />
+          <div class="search-button">
+            <input type="submit" value="Google Search" />
+            <input type="submit" name="btnI" value="I'm Feeling Lucky" />
+          </div>
+        </form>
+        <div class="g-offer">
+          <span>Google offered in:</span>
+          <a href="#">Indonesia</a>
+          <a href="#">Bahasa Ngapak</a>
+        </div>
+      </div>
     </main>
 
     <footer>
-      <div>
-        <a href="#">About</a>
-        <a href="#">Advertising</a>
-        <a href="#">Business</a>
-        <a href="#">How Search works</a>
-      </div>
-      <div>
-        <a href="#">Privacy</a>
-        <a href="#">Terms</a>
-        <a href="#">Settings</a>
+      <div class="country">Indonesia</div>
+      <div class="footer">
+        <div>
+          <a href="#">About</a>
+          <a href="#">Advertising</a>
+          <a href="#">Business</a>
+          <a href="#">How Search works</a>
+        </div>
+        <div>
+          <a href="#">Privacy</a>
+          <a href="#">Terms</a>
+          <a href="#">Settings</a>
+        </div>
       </div>
     </footer>
   </body>

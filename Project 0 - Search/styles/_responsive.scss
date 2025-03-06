@@ -1,0 +1,49 @@
+@media (min-width:1200px) {
+    .footer{ 
+    justify-content: space-between;
+    }
+}
+@media (max-width: 822px) {
+    
+    .form-group {
+        .instruction-item {
+            content-visibility: hidden;
+        }
+        h4 {
+            content-visibility: hidden;
+        }
+    }
+    
+    
+}
+
+@media (max-width: 400px) {
+    body {
+        min-width: 400px;
+    }
+    main {
+        margin-bottom: 55%;
+    }
+    footer{
+        bottom: 0;
+        position: fixed;
+        min-width: 400px;
+    }
+    .search-input{
+        width: 368px;
+    }
+    
+    .adv-search-form {
+        form {
+            grid-template-columns: 1fr;
+        }
+    }
+    
+    .form-group {
+        .instruction-item {
+            padding-left: 0;
+            margin-bottom: 20px;
+        }
+    }
+
+}

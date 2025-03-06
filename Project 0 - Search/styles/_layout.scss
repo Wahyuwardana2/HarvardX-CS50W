@@ -1,7 +1,6 @@
 @use "variables";
 @use "mixins";
 
-
 header {
     width: 100%;
     padding: 20px 20px;
@@ -20,13 +19,17 @@ header {
 }
 
 main {
-    @include mixins.flex-center;
     flex-direction: column;
-    background-color: white;
     flex: 1;
+    background-color: white;
+    margin-bottom: 9%;
+    > * {
+        margin: 15px; 
+     }
 }
 
-footer {
+
+.footer {
     display: flex;
     flex-wrap: wrap;
     font-size: 14px;
@@ -34,17 +37,31 @@ footer {
     background-color: #f2f2f2;
     padding:0 20px 0 20px;
     div{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-        a{
-            display: block;
-            padding: 15px;
-            text-decoration: none;
-            color: variables.$text-color;
-            &:hover{
-                text-decoration: underline;
-            }
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;  
+
+
+    a{
+        display: block;
+        padding: 15px;
+        text-decoration: none;
+        color: variables.$text-color;
+        &:hover{
+            text-decoration: underline;
         }
     }
+}
+}
+
+footer {
+.country{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: #f2f2f2;
+    font-size: 15px;
+    padding: 15px 30px;
+    border-bottom: 1px solid #dadce0;
+}
 }

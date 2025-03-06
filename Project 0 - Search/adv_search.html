@@ -2,10 +2,8 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0, maximum-scale=1" />
-    <title>Search</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Google Advanced Search</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -15,25 +13,68 @@
         <a href="img_search.html">Images</a>
       </nav>
     </header>
-
-    <main>
-      <form action="https://www.google.com/search">
-        <input type="text" name="q" />
-        <input type="submit" value="Google Search" />
-      </form>
-    </main>
-
-    <footer>
-      <div>
-        <a href="#">About</a>
-        <a href="#">Advertising</a>
-        <a href="#">Business</a>
-        <a href="#">How Search works</a>
+    <main class="adv-container">
+      <h2>Advanced Search</h2>
+      <div class="adv-search-form">
+        <form action="https://www.google.com/search">
+          <div class="form-group">
+            <h3>Find pages with...</h3>
+            <h4>To do this in the search box.</h4>
+          </div>
+          <div class="form-group">
+            <label> all these words: </label>
+            <input type="text" name="as_q" />
+            <p class="instruction-item">
+              Type the important words:
+              <strong>tri-colour rat terrier</strong>
+            </p>
+          </div>
+          <div class="form-group">
+            <label>this exact word or pharse:</label>
+            <input type="text" name="as_epq" />
+            <p class="instruction-item">
+              Put exact word in quotes:<strong> "rat terrier"</strong>
+            </p>
+          </div>
+          <div class="form-group">
+            <label>any of these words:</label>
+            <input type="text" name="as_oq" />
+            <p class="instruction-item">
+              Type <strong>OR</strong>between all the words you want:<strong>
+                miniature OR standard</strong
+              >
+            </p>
+          </div>
+          <div class="form-group">
+            <label>none of these words:</label>
+            <input type="text" name="as_eq" />
+            <p class="instruction-item">
+              Put a minus sign just before words that you don't want:<strong
+                ><br />
+                -rodent, -"Jack Russell"</strong
+              >
+            </p>
+          </div>
+          <div class="adv-search-button">
+            <input type="submit" value="Advanced Search" />
+          </div>
+        </form>
       </div>
-      <div>
-        <a href="#">Privacy</a>
-        <a href="#">Terms</a>
-        <a href="#">Settings</a>
+    </main>
+    <footer>
+      <div class="country">Indonesia</div>
+      <div class="footer">
+        <div>
+          <a href="#">About</a>
+          <a href="#">Advertising</a>
+          <a href="#">Business</a>
+          <a href="#">How Search works</a>
+        </div>
+        <div>
+          <a href="#">Privacy</a>
+          <a href="#">Terms</a>
+          <a href="#">Settings</a>
+        </div>
       </div>
     </footer>
   </body>
